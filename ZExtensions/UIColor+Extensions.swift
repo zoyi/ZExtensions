@@ -11,7 +11,7 @@ import UIKit
 
 public extension UIColor {
 
-  public convenience init(hex: String, alpha: Double) {
+  public convenience init(hex: String, alpha: CGFloat) {
     var hexString = hex
     if hexString.hasPrefix("#") {
       hexString = hexString.substringFromIndex(advance(hexString.startIndex, 1))
@@ -25,7 +25,7 @@ public extension UIColor {
       self.init(red:   CGFloat((hexValue & 0xFF0000) >> 16) / 0xFF,
         green: CGFloat((hexValue & 0x00FF00) >> 8) / 0xFF,
         blue:  CGFloat(hexValue & 0x0000FF) / 0xFF,
-        alpha: CGFloat(alpha))
+        alpha: alpha)
     }
   }
 
