@@ -10,6 +10,9 @@
 		9C230D851B956B6900B57CBF /* ZExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C230D841B956B6900B57CBF /* ZExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C230D8B1B956B6900B57CBF /* ZExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C230D7F1B956B6900B57CBF /* ZExtensions.framework */; };
 		9C230D921B956B6900B57CBF /* ZExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C230D911B956B6900B57CBF /* ZExtensionsTests.swift */; };
+		9C230D9E1B956E2900B57CBF /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C230D9D1B956E2900B57CBF /* UIColor+Extensions.swift */; };
+		9C230DA01B956EA200B57CBF /* Geometry+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C230D9F1B956EA200B57CBF /* Geometry+Extensions.swift */; };
+		9C230DA21B956EC400B57CBF /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C230DA11B956EC400B57CBF /* UIView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		9C230D8A1B956B6900B57CBF /* ZExtensionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZExtensionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C230D901B956B6900B57CBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C230D911B956B6900B57CBF /* ZExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZExtensionsTests.swift; sourceTree = "<group>"; };
+		9C230D9D1B956E2900B57CBF /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		9C230D9F1B956EA200B57CBF /* Geometry+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Geometry+Extensions.swift"; sourceTree = "<group>"; };
+		9C230DA11B956EC400B57CBF /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,9 @@
 			isa = PBXGroup;
 			children = (
 				9C230D841B956B6900B57CBF /* ZExtensions.h */,
+				9C230D9D1B956E2900B57CBF /* UIColor+Extensions.swift */,
+				9C230D9F1B956EA200B57CBF /* Geometry+Extensions.swift */,
+				9C230DA11B956EC400B57CBF /* UIView+Extensions.swift */,
 				9C230D821B956B6900B57CBF /* Supporting Files */,
 			);
 			path = ZExtensions;
@@ -209,6 +218,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C230DA21B956EC400B57CBF /* UIView+Extensions.swift in Sources */,
+				9C230D9E1B956E2900B57CBF /* UIColor+Extensions.swift in Sources */,
+				9C230DA01B956EA200B57CBF /* Geometry+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +335,7 @@
 		9C230D961B956B6900B57CBF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -332,12 +345,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		9C230D971B956B6900B57CBF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
