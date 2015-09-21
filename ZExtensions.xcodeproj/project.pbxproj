@@ -167,6 +167,8 @@
 		9C230D761B956B6900B57CBF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = ZOYI;
 				TargetAttributes = {
@@ -414,6 +416,7 @@
 				9C230D971B956B6900B57CBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9C230D981B956B6900B57CBF /* Build configuration list for PBXNativeTarget "ZExtensionsTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +425,7 @@
 				9C230D9A1B956B6900B57CBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

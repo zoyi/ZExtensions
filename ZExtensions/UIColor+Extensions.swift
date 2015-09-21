@@ -14,10 +14,10 @@ public extension UIColor {
   public convenience init(hex: String, alpha: CGFloat) {
     var hexString = hex
     if hexString.hasPrefix("#") {
-      hexString = hexString.substringFromIndex(advance(hexString.startIndex, 1))
+      hexString = hexString.substringFromIndex(hexString.startIndex.advancedBy(1))
     }
 
-    if count(hexString) != 6 {
+    if hexString.characters.count != 6 {
       self.init(white: 1, alpha: 1)
     } else {
       var hexValue: UInt32 = 0
