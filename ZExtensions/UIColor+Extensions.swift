@@ -23,9 +23,9 @@ public extension UIColor {
       var hexValue: UInt32 = 0
       NSScanner(string: hexString).scanHexInt(&hexValue)
       self.init(red:   CGFloat((hexValue & 0xFF0000) >> 16) / 0xFF,
-        green: CGFloat((hexValue & 0x00FF00) >> 8) / 0xFF,
-        blue:  CGFloat(hexValue & 0x0000FF) / 0xFF,
-        alpha: alpha)
+                green: CGFloat((hexValue & 0x00FF00) >> 8) / 0xFF,
+                blue:  CGFloat(hexValue & 0x0000FF) / 0xFF,
+                alpha: alpha)
     }
   }
 
