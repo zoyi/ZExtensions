@@ -8,30 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		9C230D851B956B6900B57CBF /* ZExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C230D841B956B6900B57CBF /* ZExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C230D8B1B956B6900B57CBF /* ZExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C230D7F1B956B6900B57CBF /* ZExtensions.framework */; };
-		9C230D921B956B6900B57CBF /* ZExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C230D911B956B6900B57CBF /* ZExtensionsTests.swift */; };
 		9C230D9E1B956E2900B57CBF /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C230D9D1B956E2900B57CBF /* UIColor+Extensions.swift */; };
 		9C230DA01B956EA200B57CBF /* Geometry+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C230D9F1B956EA200B57CBF /* Geometry+Extensions.swift */; };
 		9C230DA21B956EC400B57CBF /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C230DA11B956EC400B57CBF /* UIView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		9C230D8C1B956B6900B57CBF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9C230D761B956B6900B57CBF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9C230D7E1B956B6900B57CBF;
-			remoteInfo = ZExtensions;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		9C230D7F1B956B6900B57CBF /* ZExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C230D831B956B6900B57CBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C230D841B956B6900B57CBF /* ZExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZExtensions.h; sourceTree = "<group>"; };
-		9C230D8A1B956B6900B57CBF /* ZExtensionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZExtensionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C230D901B956B6900B57CBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9C230D911B956B6900B57CBF /* ZExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZExtensionsTests.swift; sourceTree = "<group>"; };
 		9C230D9D1B956E2900B57CBF /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		9C230D9F1B956EA200B57CBF /* Geometry+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Geometry+Extensions.swift"; sourceTree = "<group>"; };
 		9C230DA11B956EC400B57CBF /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
@@ -45,14 +30,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9C230D871B956B6900B57CBF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9C230D8B1B956B6900B57CBF /* ZExtensions.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -60,7 +37,6 @@
 			isa = PBXGroup;
 			children = (
 				9C230D811B956B6900B57CBF /* ZExtensions */,
-				9C230D8E1B956B6900B57CBF /* ZExtensionsTests */,
 				9C230D801B956B6900B57CBF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,7 +45,6 @@
 			isa = PBXGroup;
 			children = (
 				9C230D7F1B956B6900B57CBF /* ZExtensions.framework */,
-				9C230D8A1B956B6900B57CBF /* ZExtensionsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,23 +65,6 @@
 			isa = PBXGroup;
 			children = (
 				9C230D831B956B6900B57CBF /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		9C230D8E1B956B6900B57CBF /* ZExtensionsTests */ = {
-			isa = PBXGroup;
-			children = (
-				9C230D911B956B6900B57CBF /* ZExtensionsTests.swift */,
-				9C230D8F1B956B6900B57CBF /* Supporting Files */,
-			);
-			path = ZExtensionsTests;
-			sourceTree = "<group>";
-		};
-		9C230D8F1B956B6900B57CBF /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				9C230D901B956B6900B57CBF /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -143,24 +101,6 @@
 			productReference = 9C230D7F1B956B6900B57CBF /* ZExtensions.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		9C230D891B956B6900B57CBF /* ZExtensionsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9C230D981B956B6900B57CBF /* Build configuration list for PBXNativeTarget "ZExtensionsTests" */;
-			buildPhases = (
-				9C230D861B956B6900B57CBF /* Sources */,
-				9C230D871B956B6900B57CBF /* Frameworks */,
-				9C230D881B956B6900B57CBF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9C230D8D1B956B6900B57CBF /* PBXTargetDependency */,
-			);
-			name = ZExtensionsTests;
-			productName = ZExtensionsTests;
-			productReference = 9C230D8A1B956B6900B57CBF /* ZExtensionsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -169,13 +109,10 @@
 			attributes = {
 				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = ZOYI;
 				TargetAttributes = {
 					9C230D7E1B956B6900B57CBF = {
-						CreatedOnToolsVersion = 6.4;
-					};
-					9C230D891B956B6900B57CBF = {
 						CreatedOnToolsVersion = 6.4;
 					};
 				};
@@ -193,20 +130,12 @@
 			projectRoot = "";
 			targets = (
 				9C230D7E1B956B6900B57CBF /* ZExtensions */,
-				9C230D891B956B6900B57CBF /* ZExtensionsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		9C230D7D1B956B6900B57CBF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9C230D881B956B6900B57CBF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -226,23 +155,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9C230D861B956B6900B57CBF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9C230D921B956B6900B57CBF /* ZExtensionsTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		9C230D8D1B956B6900B57CBF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9C230D7E1B956B6900B57CBF /* ZExtensions */;
-			targetProxy = 9C230D8C1B956B6900B57CBF /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		9C230D931B956B6900B57CBF /* Debug */ = {
@@ -267,6 +180,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -346,6 +260,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.zoyi.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -364,38 +279,9 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.zoyi.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		9C230D991B956B6900B57CBF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ZExtensionsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		9C230D9A1B956B6900B57CBF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ZExtensionsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -416,15 +302,6 @@
 			buildConfigurations = (
 				9C230D961B956B6900B57CBF /* Debug */,
 				9C230D971B956B6900B57CBF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9C230D981B956B6900B57CBF /* Build configuration list for PBXNativeTarget "ZExtensionsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9C230D991B956B6900B57CBF /* Debug */,
-				9C230D9A1B956B6900B57CBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
